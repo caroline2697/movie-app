@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greetingText">Kamu hari ini mau nonton film apa?</string>
+    <string name="searchText">Cari berdasarkan judul atau genre</string>
+    <string name="allMovie">Semua Film</string>
+    <string name="overview">Sinopsis</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Ganti Bahasa</string>
+    <string name="view_watchlist">Daftar Tonton Saya</string>
+    <string name="watchlist">Daftar Tonton</string>
+    <string name="savedWatchlist">Tersimpan</string>
+    <string name="addToWatchlist">Simpan ke Daftar Tonton</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DetailActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--Backdrop-->
+            <ImageView
+                android:id="@+id/backdropMovie"
+                android:layout_width="match_parent"
+                android:layout_height="318dp"
+                android:background="@color/gray_700" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="114dp"
+                android:src="@drawable/gradient" />
+        </FrameLayout>
+        <!--    Detail Movie-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="150dp"
+            android:paddingBottom="50dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="155dp"
+                android:layout_height="234dp"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:id="@+id/posterMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/movieTitle"
+                style="@style/Display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Movie Title"
+                android:textColor="@color/gray_700" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/star" />
+                <!--            rating-->
+                <TextView
+                    android:id="@+id/movieRating"
+                    style="@style/BodyReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="ratings"
+                    android:textColor="@color/gray_500" />
+
+                <TextView
+                    style="@style/BodyReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="|"
+                    android:textColor="@color/gray_500" />
+
+                <TextView
+                    android:id="@+id/realeseDate"
+                    style="@style/BodyReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oct 2021"
+                    android:textColor="@color/gray_500" />
+            </LinearLayout>
+            <!--        Sinopsis-->
+            <TextView
+                style="@style/Heading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/overview"
+                android:textColor="@color/gray_700" />
+
+            <TextView
+                android:id="@+id/movieOverview"
+                style="@style/BodyReguler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="A girl builds a rocket to travel to the moon in hopes of meeting the legendary Moon Goddess"
+                android:textColor="@color/gray_500" />
+
+            <Button
+                android:id="@+id/add_Watchlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/gray_700"
+                android:textColor="@color/white"
+                android:paddingVertical="20dp"
+                android:text="Add to Watchlist" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

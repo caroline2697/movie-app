@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">MovieApp</string>
+    <string name="greetingText">What would you watch today?</string>
+    <string name="searchText">Search title or genres</string>
+    <string name="allMovie">All Movies</string>
+    <string name="overview">Overview</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Change Language</string>
+    <string name="view_watchlist">My Watchlist</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="savedWatchlist">Saved</string>
+    <string name="addToWatchlist">Add To Watchlist</string>
+
+</resources>

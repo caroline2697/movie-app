@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="6dp"
+            android:layout_width="82dp"
+            android:layout_height="122dp">
+            <ImageView
+                android:id="@+id/posterMovie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+<!--        MovieAtribute-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp">
+<!--            Title-->
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                style="@style/BodyLarge"
+                android:textColor="@color/gray_700"
+                android:text="Upin dan Ipin"/>
+<!--            Rating dan tahun-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/star"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"/>
+<!--                rating-->
+
+                <TextView
+                    android:id="@+id/movieRating"
+                    style="@style/BodyRegulerMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="ratings"
+                    android:textColor="@color/gray_500" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    style="@style/BodyRegulerMedium"
+                    android:textColor="@color/gray_500"
+                    android:text="|"/>
+                <TextView
+                    android:id="@+id/realeseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/BodyRegulerMedium"
+                    android:textColor="@color/gray_500"
+                    android:text="Oct 2021"/>
+            </LinearLayout>
+<!--            Sinopsis-->
+            <TextView
+                android:id="@+id/movieOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                style="@style/Caption"
+                android:textColor="@color/gray_500"
+                android:maxLines="3"
+                android:text="A girl builds a rocket to travel to the moon in hopes of meeting the legendary Moon Goddess"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
